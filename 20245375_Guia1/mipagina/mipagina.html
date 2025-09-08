@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlanta</title>
+    <link rel="stylesheet" href="mipagina.css">
+</head>
+
+<body>
+    <h1 id="title"><img src="AtlantaLogo.png" alt=""></h1>
+
+    <nav>
+        <ul>
+            <li><a href="#descripcion">Inicio</a></li>
+            <li><a href="#personajes">Personajes</a></li>
+            <li><a href="#temporadas">Temporadas</a></li>
+        </ul>
+    </nav>
+    <img id="portada" src="fondo.jpg" alt="Atlanta">
+    <section>
+        <h2>Personajes principales</h2>
+        <div id="personajes">
+            <div class="personaje_izquierda" id="earn">
+                <strong>Earnest "Earn" Marks</strong> (Donald Glover): Un joven que intenta gestionar la carrera de su
+                primo, el rapero Paper Boi.
+            </div>
+            <div class="personaje_derecha" id="paperboi">
+                <strong>Alfred "Paper Boi" Miles</strong> (Brian Tyree Henry): Un rapero en ascenso que enfrenta los
+                desafíos de la fama.
+
+            </div>
+            <div class="personaje_izquierda" id="darius">
+                <strong>Darius</strong> (Lakeith Stanfield): El amigo excéntrico de Paper Boi, que a menudo ofrece
+                perspectivas únicas.
+            </div>
+            <div class="personaje_derecha" id="van">
+                <strong>Vanessa "Van" Keefer</strong> (Zazie Beetz): La madre de la hija de Earn y su interés amoroso.
+            </div>
+        </div>
+    </section>
+
+    <h2 id="temporadas">Episodios y temporadas</h2>
+
+    <div id="temporadas-container">
+        <!-- Radio buttons ocultos -->
+        <input type="radio" id="temp1" name="temporada" checked>
+        <input type="radio" id="temp2" name="temporada">
+        <input type="radio" id="temp3" name="temporada">
+        <input type="radio" id="temp4" name="temporada">
+
+
+        <!-- Navegación -->
+        <div class="temporada-nav">
+            <label for="temp1" class="nav-btn">Temporada 1</label>
+            <label for="temp2" class="nav-btn">Temporada 2</label>
+            <label for="temp3" class="nav-btn">Temporada 3</label>
+            <label for="temp4" class="nav-btn">Temporada 4</label>
+        </div>
+        <h3 id="Info">Atlanta cuenta con un total de 4 temporadas, cada una explorando diferentes aspectos de la vida de
+            los personajes y la cultura del rap en Atlanta.</h3>
+
+
+        <!-- Contenido de temporadas -->
+        <div class="temporada-content">
+            <div class="temporada-item">
+                <h3>Temporada 1</h3>
+                <p>La primera temporada se centra en la lucha de Earn para convertirse en el mánager de su primo Paper
+                    Boi y las dificultades que enfrentan en su camino hacia el éxito.</p>
+                <img id="temporada1" src="Season1.jpg" alt="Temporada 1">
+            </div>
+
+            <div class="temporada-item">
+                <h3>Temporada 2</h3>
+                <p>La segunda temporada sigue a los personajes mientras navegan por las complejidades de la fama y la
+                    vida en Atlanta.</p>
+                <img id="temporada2" src="season2.jpg" alt="Temporada 2">
+            </div>
+
+            <div class="temporada-item">
+                <h3>Temporada 3</h3>
+                <p>La tercera temporada explora temas de identidad y pertenencia, mientras los personajes enfrentan
+                    nuevos desafíos.</p>
+                <img id="temporada3" src="season3.avif" alt="Temporada 3">
+            </div>
+
+            <div class="temporada-item">
+                <h3>Temporada 4</h3>
+                <p>La cuarta temporada concluye la historia de los personajes, cerrando arcos narrativos y ofreciendo
+                    una reflexión sobre su viaje.</p>
+                <img id="temporada4" src="season4.jpg" alt="Temporada 4">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mi Página Personal</p>
+    </footer>
+
+</body>
+
+</html>

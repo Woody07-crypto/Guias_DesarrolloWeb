@@ -1,0 +1,355 @@
+/*
+    Archivo: mipagina.css
+    Autor: Alejandro Cruz
+    Fecha: 06/06/2024
+    Descripción: Estilos para la página personal.
+*/
+/* Estilos generales */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*general*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+
+/*titulo*/
+#title {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #222;
+    font-size: 42px; /* Texto más grande */
+    font-weight: bold;
+    background-image: url("top.jpg");
+    background-size: cover;
+    
+    
+    color: #ffffff;
+    text-shadow: 
+        2px 2px 4px rgba(0,0,0,0.9),
+        -1px -1px 2px rgba(0,0,0,0.7); /* Doble sombra */
+    
+    /* Degradado sutil sobre la imagen */
+    background: 
+        linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+        url("top.jpg");
+    background-size: cover;
+}
+
+/*box de navegacion*/
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+    margin: 0; /* Sin márgenes */
+}
+/*espacio entre los elementos del menu*/
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/*imagen de portada*/
+#portada {
+    display: block;
+    margin: 0 auto; /* Solo centrado horizontal */
+    max-width: 99%;
+    height: auto;
+    filter:brightness(0.4) ;
+    transition: all 0.5s ease;
+}
+
+#portada:hover {
+    transform: scale(1.01);
+    filter:brightness(0.8) ;
+}
+
+/*seccion de personajes*/
+h2 {
+    color: white;
+    font-size: 30px;
+    margin: 20px;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#personajes {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 5px; /* Reduce el espacio entre elementos */
+}
+
+.personaje_derecha, .personaje_izquierda {
+    background-color: #333;
+    padding: 15px; /* Aumentado de 10px a 15px */
+    margin: 5px; /* Reducido de 10px a 5px */
+    border-radius: 10px;
+    max-width: 800px; /* Aumentado de 600px a 800px */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.personaje_izquierda {
+    margin-left: 50px; /* Reducido de 80px a 50px */
+    margin-right: auto;
+    flex-direction: row-reverse;
+    text-align: left;
+    width: 450px; /* Aumentado de 300px a 450px */
+    height: 250px; /* Aumentado de 200px a 250px */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.personaje_derecha {
+    margin-left: auto;
+    margin-right: 50px; /* Reducido de 80px a 50px */
+    text-align: right;
+    width: 450px; /* Aumentado de 300px a 450px */
+    height: 250px; /* Aumentado de 200px a 250px */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+#earn {
+    background-image: url("earn.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5);
+    transition: all 0.3s ease;
+}
+
+#darius {
+    background-image: url("darius.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5);
+    transition: all 0.3s ease;
+}
+
+#paperboi {
+    background-image: url("paperboi.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5);
+    transition: all 0.3s ease;
+}
+
+#van {
+    background-image: url("van.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5);
+    transition: all 0.3s ease;
+}
+
+#earn:hover, #darius:hover, #paperboi:hover, #van:hover {
+    filter: brightness(1);
+    transform: scale(1.02);
+}
+
+
+/*temporadas*/
+#temporadas {
+    margin: auto;
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #222;
+    font-size: 42px; /* Texto más grande */
+    font-weight: bold;
+    background-image: url("atlanta-series.avif");
+    background-size: cover;
+    background-position: center 20%; /* Más hacia abajo aún */
+    background: brightness(0.2);
+}
+
+#temporadas p {
+    color: white;
+    font-size: 20px;
+    max-width: 800px;
+    margin: 20px auto 0 auto;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+#Info{
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    padding: auto;
+    margin: auto;
+}
+
+#temporadas-container {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.temporada-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.temporada-nav button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.temporada-nav button:hover:not(:disabled) {
+    background-color: #777;
+    transform: translateY(-2px);
+}
+
+.temporada-nav button:disabled {
+    background-color: #333;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+#temporada-actual {
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
+
+#temporadas-container {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Ocultar radio buttons */
+input[type="radio"] {
+    display: none;
+}
+
+/* Estilos de navegación */
+.temporada-nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-btn {
+    background-color: #555;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.nav-btn:hover {
+    background-color: #777;
+    transform: translateY(-2px);
+}
+
+/* Estilo activo */
+#temp1:checked ~ .temporada-nav label[for="temp1"],
+#temp2:checked ~ .temporada-nav label[for="temp2"],
+#temp3:checked ~ .temporada-nav label[for="temp3"],
+#temp4:checked ~ .temporada-nav label[for="temp4"] {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Ocultar todas las temporadas por defecto */
+.temporada-item {
+    display: none;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+}
+
+/* Mostrar temporada activa */
+#temp1:checked ~ .temporada-content .temporada-item:nth-child(1),
+#temp2:checked ~ .temporada-content .temporada-item:nth-child(2),
+#temp3:checked ~ .temporada-content .temporada-item:nth-child(3),
+#temp4:checked ~ .temporada-content .temporada-item:nth-child(4) {
+    display: block;
+}
+
+.temporada-item h3 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 24px;
+    border-bottom: 2px solid #666;
+    padding-bottom: 10px;
+}
+
+.temporada-item p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+#temporada1, #temporada2, #temporada3, #temporada4 {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 5%;
+    background-color: #222;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 90%;
+    font-size: 14px;
+    margin-top: auto;
+}
