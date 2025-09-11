@@ -1,0 +1,61 @@
+html{
+    font-size: 20x;
+}
+
+body{
+    color: #fcfcfc;
+    background-color: #355664;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h1{
+    font-size: 2rem; /* 2 rem = 40px */
+}
+
+h2{
+    font-size: 1.2rem; /* 1.2 rem = 24px */
+}
+
+h3{
+    font-size: 1rem; /* 1 rem = 20px */
+}
+
+footer{
+    background-color: black;
+    color: white;
+    font-size: 0.7rem;
+    margin-top: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+div.wrapper{
+    margin: auto;
+    width: 80%;
+}
+
+section article{
+    background-color: rgb(33,62,74,1);
+    margin-top: 20px;
+    padding: 12px;
+}
+
+section article p{
+    font-size: 0.8rem;
+    text-align: justify;
+}
+
+nav span{
+    background-color: white;
+    border-right: 1px solid;
+    color:black;
+    font-size: 0.6rem;
+    float: left;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav span:hover{
+    background-color: #b2dfdb;
+}
