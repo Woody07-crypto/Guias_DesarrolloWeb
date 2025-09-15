@@ -1,33 +1,39 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: steelblue;
-    color: #eee;
+    color: #EEE;
     font-family: sans-serif;
     text-align: center;
 }
 
-#tablero{
+#tablero {
     background-color: white;
     height: 400px;
     width: 400px;
     margin: auto;
 }
 
-#tablero p{
+#tablero p {
     background-color: black;
     color: white;
     float: left;
     font-size: 36px;
     height: 50px;
     width: 50px;
-    vertical-align: center;
+    text-align: center;
 }
 
-#tablero .filaImpar p:nth-child(2n+1){
+#tablero .filaImpar p:nth-child(2n+1) {
     background-color: white;
 }
+
+#tablero .filaPar p:nth-child(2n) {
+    background-color: white;
+}
+
+
 

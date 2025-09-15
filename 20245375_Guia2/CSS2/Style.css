@@ -59,3 +59,20 @@ nav span{
 nav span:hover{
     background-color: #b2dfdb;
 }
+
+nav span:last-of-type{
+    background-color: red;
+}
+
+p::first-letter{
+    font-size: 1.5rem;
+    color: gold;
+}
+
+
+section:first-child article p:first-line {
+    text-decoration: underline;
+    text-decoration-color: #ffcc80;
+    font-weight: bold;
+}
+
