@@ -1,6 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 /* 1. FUENTES Y ESTILO BASE */
 body {
-    background-color: antiquewhite;
+    background: #020024;
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -51,11 +57,9 @@ li a:hover {
 
 /* 4. ARTICLES */
 article {
-    background-color: mediumaquamarine;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    border: 2px solid black;
+    border-bottom: #020024 2px solid;
+    border-top: #020024 2px solid;
+    color: white;
 }
 
 article h2 {
@@ -69,9 +73,23 @@ article h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px;
-    margin: 40px 10%;
+    margin-top: 20px;
 }
+
+#box-initial-article {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+#box-initial-article div {
+    flex: 1 1 48%; /* cada div ocupará hasta el 48% del ancho */
+    box-sizing: border-box;
+    text-align: justify;
+    padding: 0 10px;
+}
+
 
 #informacion-personal,
 #vida-academica {
@@ -80,34 +98,74 @@ article h2 {
 }
 
 /* 6. RESTO DE SECCIONES */
-#vida-deportiva,
 #vida-familiar {
     margin: 20px 10%;
+    padding: 10px;
+    border: 2px solid black;
 }
 
-#viajes {
-    margin: 20px 10%;
-    padding: 20px;
-    background-color: darkslategray;
-    border: 2px solid black;
-    border-radius: 10px;
+#vida-deportiva {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,52,9,1) 35%, rgba(255,149,0,1) 100%);
     color: white;
+    margin-top: auto;
+    padding: 10px;
+    border-bottom: none;
+}
+
+#vida-deportiva div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center; 
+    gap: 20px;
+    padding: 10px;
+    text-align: justify;
+}
+
+
+#viajes {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,52,9,1) 35%, rgba(255,149,0,1) 100%);
 }
 
 #viajes h2 {
+    color: white;
+    padding: 10px 0;
     text-align: center;
-    font-size: 1.3rem;
-    margin-top: 0;
 }
 
-#viajes ul {
-    padding: 0;
+#viajes-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,52,9,1) 35%, rgba(255,149,0,1) 100%);
     list-style: none;
 }
 
-#viajes li {
-    margin: 10px 0;
+#viajes-lista li {
+    width: 200px;
     text-align: center;
+    padding: 10px;
+}
+
+#viajes-lista div p {
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#viajes-lista img {
+    width: 100%;
+    height: auto;
+}
+
+#viajes-lista img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 img {
