@@ -1,24 +1,37 @@
-
+@import url('https://fonts.googleapis.com/css?family=Multi');
 
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
+    padding-top: 130px; 
+    padding-bottom: 50px; 
+    min-height: 100vh;
 }
 
 header{
     background: #16A085;
     height: 130px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 footer{
-    margin-top: 20px;
     background: #16A085;
     height: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 header div, footer div{
@@ -40,5 +53,50 @@ h2{
 section{
     margin: 0 auto;
     width: 90%;
+    position: relative;
+    padding: 20px 0;
 }
+
+/* Contenedor flex para las películas */
+.peliculas-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+    justify-content: center;
+}
+
+section article{
+    width: 32%; 
+    height: 340px;
+    border: 2px dashed #16A085;
+    padding: 1%;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section article img{
+    height: 180px;
+    max-width: 80%;
+    margin: 5px auto;
+    display: block;
+}
+
+footer div{
+    padding-top: 1rem;
+}
+
+section article:nth-child(2){
+    background-color: rgba(70,130,180,0.9);
+    position: static;
+    left: 100px;
+    top:50px;
+    display: none;
+}
+/*La posición relativa mueve el elemento respecto a su posición original, sin afectar a los demás elementos.*/
+/*La diferencia entre posicion absoluta y relativa es que la absoluta se posiciona respecto al contenedor padre con posición relativa, y la relativa respecto a su posición original.*/
+/*La diferencia entre hidden y none es que hidden oculta el elemento pero sigue ocupando espacio, mientras que none lo elimina del flujo del documento.*/
+
+
+
 
