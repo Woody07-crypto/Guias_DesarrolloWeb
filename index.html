@@ -1,32 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/portafolio.css">
     <title>Index Desarrollo Web</title>
 </head>
+
 <body>
-    <h1>Guías de Estudio Alejandro Javier Cruz Linares</h1>
-    <p>Bienvenido a las guías de estudio. Aquí encontrarás recursos útiles para tu aprendizaje.</p>
-    <ul>
-        <h2>Guía 1</h2>
-        <li><a href="20245375_Guia1/Estilos_embedidos.html">Estilos_embedidos</a></li>
-        <li><a href="20245375_Guia1/ejemplo2.html">Ejemplo 2</a></li>
-        <li><a href="20245375_Guia1/paises.html">Paises</a></li>
-        <li><a href="20245375_Guia1/mipagina/mipagina.html">Serie</a></li>
-        <h2>Guía 2</h2>
-        <li><a href="20245375_Guia2/pelicula.html">pelicula</a></li>
-        <li><a href="20245375_Guia2/tablero.html">Tablero</a></li>
-        <li><a href="20245375_Guia2/biografia.html">Biografía</a></li>
-        <h2>Guía 3</h2>
-        <li><a href="20245375_Guia3/oscares.html">Peliculas</a></li>
-        <li><a href="20245375_Guia3/index.html">Viajes</a></li>
-        <li><a href="20245375_Guia3/analisis.html">Cartas</a></li>
-        <li><a href="20245375_Guia3/menu_horizontal.html">Menu</a></li>
-        
-
-    </ul>
+    <nav>
+        <h1>Portafolio de Guias</h1>
+        <ul>
+            <li><a href="#bio">Biografía</a></li>
+            <li><a href="#guias">Guias realizadas</a></li>
+            <li><a href="#foda">FODA</a></li>
+        </ul>
+    </nav>
+    <section id="bio" class="biografia">
+        <div class="biografia-content">
+            <div class="biografia-content-title">
+                <img src="img/ale1.jpg" alt="Alejandro Javier Cruz Linares">
+                <h1>Alejandro Javier Cruz Linares</h1>
+                <h2>20245375</h2>
+            </div>
+            <div class="biografia-content-text">
+                <p>Mi nombre es Alejandro Javier Cruz Linares y actualmente estoy estudiando la carrera de Ingeniera de
+                    software y negocios digitales en la Escuela Superior en Economía y Negocios (ESEN), nací el 18 de
+                    octubre de 2005 y vivo en El Salvador. Tengo varios pasatiempos, pero mis preferidos son jugar al
+                    futbol, escuchar música, pasar tiempo con mis amigos y de vez en cuando hago crochet para ganar algo
+                    de dinero, también soy parte del movimiento scout desde los 5 años y he tenido una vida llena de
+                    aventuras al aire libre en campamentos y actividades con gente de todos los departamentos.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1 id="guias">Guias realizadas</h1>
+        <div class="guias-content">
+            <div class="Outer-div">
+                <h2>Guia 1</h2>
+                <p>Esta guía introduce los fundamentos del desarrollo web, cubriendo la estructura básica de un
+                    documento HTML y la aplicación de estilos mediante CSS. Se practica el uso de selectores básicos,
+                    propiedades de texto y fuentes, y las tres formas de incluir CSS en un proyecto: estilos embebidos,
+                    internos y externos. También se incluye el uso de Google Fonts y la creación de tablas y layouts
+                    sencillos.</p>
+                <div class="exercise-links">
+                    <a href="20245375_Guia1/ejemplo2.html" class="exercise-link">Ejemplo 2</a>
+                    <a href="20245375_Guia1/paises.html" class="exercise-link">Paises</a>
+                    <a href="20245375_Guia1/mipagina/mipagina.html" class="exercise-link">Serie</a>
+                </div>
+            </div>
+            <div class="Outer-div">
+                <h2>Guia 2</h2>
+                <p>En esta guía se profundiza en el uso de selectores CSS avanzados como descendientes, hijos,
+                    adyacentes y de atributos, así como pseudo-clases y pseudo-elementos. También se explora el modelo
+                    de caja (margin, border, padding, content) y se realizan ejercicios prácticos como la creación de un
+                    tablero de damas usando nth-child() y la maquetación de una página con elementos posicionados y
+                    estilizados.</p>
+                <div class="exercise-links">
+                    <a href="20245375_Guia2/pelicula.html" class="exercise-link">Pelicula</a>
+                    <a href="20245375_Guia2/tablero.html" class="exercise-link">Tablero</a>
+                    <a href="20245375_Guia2/biografia.html" class="exercise-link">Biografía</a>
+                </div>
+            </div>
+            <div class="Outer-div">
+                <h2>Guia 3</h2>
+                <p>Esta guía se centra en el control del layout mediante propiedades de posicionamiento CSS: estático,
+                    relativo, absoluto, fijo y flotante. Se practica con display, visibility, overflow y z-index, y se
+                    construyen menús horizontales multinivel y diseños fijos y fluidos. También se introduce el uso de
+                    flexbox para crear estructuras responsivas.</p>
+                <div class="exercise-links">
+                    <a href="20245375_Guia3/oscares.html" class="exercise-link">Peliculas</a>
+                    <a href="20245375_Guia3/index.html" class="exercise-link">Viajes</a>
+                    <a href="20245375_Guia3/analisis.html" class="exercise-link">Cartas</a>
+                    <a href="20245375_Guia3/menu_horizontal.html" class="exercise-link">Menu</a>
+                </div>
+            </div>
+            <div class="Outer-div">
+                <h2>Guia 4</h2>
+                <p>En esta guía se aborda el diseño web adaptable mediante el uso de:
+                    Metaetiqueta viewport, Media queries para diferentes breakpoints, Estrategias como Mobile First y
+                    Desktop First,
+                    Unidades relativas y estructuras fluidas, Imágenes y tablas responsivas.
+                    Se incluye la transformación de un sitio fijo a uno totalmente responsivo para móviles, tablets y
+                    escritorios.</p>
+                <div class="exercise-links">
+                    <a href="20245375_Guia4/index.html" class="exercise-link">Index</a>
+                    <a href="20245375_Guia4/mediaqueries.html" class="exercise-link">Media Queries</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2 id="foda">FODA</h2>
+        <div class="foda-content">
+            <div>
+                <h3>Fortalezas</h3>
+                <p>He mejorado significativamente en la creación de layouts semánticos y bien organizados, aprendí a
+                    crear interfaces más interactivas y estéticas. Por ultimo Logré construir estructuras complejas y
+                    menús multinivel usando propiedades como display</p>
+            </div>
+            <div>
+                <h3>Debilidades</h3>
+                <p>Aún me cuesta dominar completamente los breakpoints para dispositivos muy específicos o resoluciones
+                    intermedias y también me cuesta hacer armonía con los colores y cosas más estéticas.</p>
+            </div>
+            <div>
+                <h3>Oportunidades</h3>
+                <p>El diseño web es esencial en marketing, emprendimiento lo que me va a ayudar a integrarme en equipos
+                    de desarrollo o diseño gracias a la comprensión de maquetación y estilos.</p>
+            </div>
+            <div>
+                <h3>Amenazas</h3>
+                <p>Sin proyectos continuos, es fácil olvidar detalles de sintaxis o buenas prácticas y también La gran
+                    variedad de dispositivos y resoluciones puede hacer difícil asegurar una experiencia perfecta en
+                    todos ellos.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Desarrollo Web</h3>
+                <p>Cubre los fundamentos esenciales para la creación de aplicaciones web modernas. A través del dominio
+                    de HTML, CSS y JavaScript, los estudiantes aprenden a diseñar sitios web atractivos, funcionales e
+                    interactivos, comprendiendo la arquitectura de las aplicaciones front-end y las mejores prácticas en
+                    el diseño web.</p>
+            </div>
+            <div class="footer-units">
+                <div class="footer-unit">
+                    <h4>UNIDAD I</h4>
+                    <p>Introducción al HTML</p>
+                    <p>• Elementos HTML y su semántica</p>
+                </div>
+                <div class="footer-unit">
+                    <h4>UNIDAD II</h4>
+                    <p>Introducción a CSS</p>
+                    <p>• Selectores CSS y propiedades</p>
+                </div>
+                <div class="footer-unit">
+                    <h4>UNIDAD III</h4>
+                    <p>Maquetación de Sitios Web</p>
+                    <p>• Posicionamiento y visualización</p>
+                </div>
+                <div class="footer-unit">
+                    <h4>UNIDAD IV</h4>
+                    <p>Frameworks de Diseño Web Responsivo</p>
+                    <p>• Malla de Bootstrap</p>
+                </div>
+                <div class="footer-unit">
+                    <h4>UNIDAD V</h4>
+                    <p>Introducción a JavaScript</p>
+                    <p>• Sintaxis y estructuras de control</p>
+                </div>
+                <div class="footer-unit">
+                    <h4>UNIDAD VI</h4>
+                    <p>DOM y JavaScript Asíncrono</p>
+                    <p>• Manipulación del Document Object Model (DOM)</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
-
-
