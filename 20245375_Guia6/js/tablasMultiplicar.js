@@ -1,7 +1,7 @@
-//Accedemos al contenedor donde se mostrara los estudiantes
+//Accedemos al contenedor donde se mostrará el resultado
 const containerResultado = document.querySelector("#idContainerResultado");
 
-//Accedemos a cada boton por medio de la API DOM
+//Accedemos al botón por medio de la API DOM
 const btnCalcular = document.querySelector("#idBtnCalcular");
 
 //Agregamos el evento click al boton calcular
@@ -18,6 +18,7 @@ function calcularTabla() {
     //verificamos que el dato colocado sea un numero entero positivo
     if (inputTabla > 0) {
         let tabla = `<h2>Tabla de multiplicar del ${inputTabla}</h2>`;
+        
         //utilizaremos do while para generar la tabla de multiplicar
         // que el usuario ha indicado
         do {
@@ -37,7 +38,7 @@ function calcularTabla() {
 
         document.querySelector("#inputTabla").value = 1;
         document.querySelector("#inputTabla").focus();
-        document.querySelector("#idContainerResultado").innerHTML = tabla;
+        containerResultado.innerHTML = tabla;
     } else {
         alert("No se ha ingresado un número válido");
     }

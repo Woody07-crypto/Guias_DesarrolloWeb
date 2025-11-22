@@ -1,0 +1,423 @@
+/* css/styles.css */
+
+/* Variables CSS para colores y estilos */
+:root {
+    --primary-color: #ff6b35;
+    --primary-dark: #e55a2b;
+    --secondary-color: #000000;
+    --success-color: #ff6b35;
+    --error-color: #ff4444;
+    --warning-color: #ffa726;
+    --light-color: #f8f9fa;
+    --dark-color: #2d2d2d;
+    --gray-color: #666666;
+    --light-gray: #e0e0e0;
+    --dark-gray: #1a1a1a;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    --transition: all 0.3s ease;
+}
+
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--light-color);
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-shadow: 0 2px 10px rgba(255, 107, 53, 0.3);
+    margin-bottom: 0.5rem;
+}
+
+/* Contenedor del formulario */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--secondary-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    border: 1px solid #333;
+}
+
+/* Formulario */
+#formulario-estudiantil {
+    padding: 2.5rem;
+}
+
+/* Grupos de formulario */
+.form-group {
+    margin-bottom: 1.8rem;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--light-color);
+    font-size: 0.95rem;
+}
+
+/* Inputs */
+.form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #333;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    transition: var(--transition);
+    background-color: var(--dark-gray);
+    color: var(--light-color);
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+}
+
+.form-group input::placeholder {
+    color: #888;
+    opacity: 0.7;
+}
+
+/* Estados de validación */
+.form-group input.valid {
+    border-color: var(--success-color);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ff6b35'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 20px;
+    padding-right: 40px;
+}
+
+.form-group input.invalid {
+    border-color: var(--error-color);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ff4444'%3E%3Cpath d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 20px;
+    padding-right: 40px;
+}
+
+/* Mensajes de error y ayuda */
+.error-message {
+    display: block;
+    color: var(--error-color);
+    font-size: 0.85rem;
+    margin-top: 0.4rem;
+    font-weight: 500;
+    min-height: 1.2rem;
+}
+
+.hint {
+    display: block;
+    color: var(--gray-color);
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+    font-style: italic;
+}
+
+/* Contenedor de botones */
+.btn-container {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Botones */
+.btn-submit, .btn-reset {
+    padding: 12px 30px;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    flex: 1;
+    min-width: 140px;
+}
+
+.btn-submit {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+}
+
+.btn-submit:hover {
+    background: linear-gradient(135deg, var(--primary-dark), #cc4a20);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
+}
+
+.btn-reset {
+    background-color: #333;
+    color: var(--light-gray);
+    border: 2px solid #444;
+}
+
+.btn-reset:hover {
+    background-color: #444;
+    color: white;
+    border-color: #555;
+    transform: translateY(-2px);
+}
+
+/* Modal de éxito */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.success-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    background: var(--secondary-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    z-index: 1001;
+    max-width: 500px;
+    width: 90%;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    border: 1px solid #333;
+}
+
+.success-modal.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.modal-header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.modal-header p {
+    opacity: 0.9;
+    font-size: 1rem;
+}
+
+.modal-content {
+    padding: 2rem;
+    max-height: 400px;
+    overflow-y: auto;
+    background: var(--dark-gray);
+}
+
+.modal-content .data-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #333;
+}
+
+.modal-content .data-item:last-child {
+    border-bottom: none;
+}
+
+.modal-content .data-label {
+    font-weight: 600;
+    color: var(--light-color);
+}
+
+.modal-content .data-value {
+    color: var(--primary-color);
+    text-align: right;
+    font-weight: 500;
+}
+
+.btn-close-modal {
+    margin: 0 2rem 2rem 2rem;
+    width: calc(100% - 4rem);
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+}
+
+.btn-close-modal:hover {
+    background: linear-gradient(135deg, var(--primary-dark), #cc4a20);
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    #formulario-estudiantil {
+        padding: 1.5rem;
+    }
+    
+    .btn-container {
+        flex-direction: column;
+    }
+    
+    .btn-submit, .btn-reset {
+        width: 100%;
+    }
+    
+    .success-modal {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.7rem;
+    }
+    
+    #formulario-estudiantil {
+        padding: 1rem;
+    }
+    
+    .form-group input {
+        padding: 10px 12px;
+    }
+    
+    .modal-header {
+        padding: 1.5rem;
+    }
+    
+    .modal-content {
+        padding: 1.5rem;
+    }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-group {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.form-group:nth-child(1) { animation-delay: 0.1s; }
+.form-group:nth-child(2) { animation-delay: 0.2s; }
+.form-group:nth-child(3) { animation-delay: 0.3s; }
+.form-group:nth-child(4) { animation-delay: 0.4s; }
+.form-group:nth-child(5) { animation-delay: 0.5s; }
+.form-group:nth-child(6) { animation-delay: 0.6s; }
+.form-group:nth-child(7) { animation-delay: 0.7s; }
+
+/* Efectos de foco mejorados */
+.form-group input:not(:placeholder-shown) {
+    background-color: #2a2a2a;
+}
+
+/* Personalización del input date */
+input[type="date"] {
+    position: relative;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+
+/* Scroll personalizado para modal */
+.modal-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+    background: #333;
+    border-radius: 3px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 3px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+}
+
+/* Estilos específicos para inputs number y email */
+input[type="number"], input[type="email"] {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Mejora visual para inputs en modo oscuro */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-text-fill-color: var(--light-color);
+    -webkit-box-shadow: 0 0 0px 1000px var(--dark-gray) inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
